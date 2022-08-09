@@ -4,7 +4,7 @@ Created on Sat Mar  5 10:33:25 2022
 
 @author: omkar
 """
-
+import time
 import requests
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
@@ -42,6 +42,7 @@ def bot():
     
     if 'hi' in incoming_msg:     
         output=(" This is a WhatsApp Messaging intervention for enhancing treatment adherence in Latent Tuberculosis Patients in Delhi \n\n Hello, Have you taken your medicine today \n type 1 for YES type 0 for NO? ")
+        time.sleep(2.0)
         incoming_msg = incoming_msg.lower()
         
         

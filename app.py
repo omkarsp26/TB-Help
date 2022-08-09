@@ -48,14 +48,16 @@ def bot():
     elif '0' in incoming_msg:
         output = ("11Hello I am here to help you regarding your treatment")
         
-        #if '1' in incoming_msg:
-      #      output = ("Are you facing any difficulties due to medicine? \n type 1 for YES type 0 for NO? ")
-       # else:
-        #    output = ("Please take your medications on time")
+    incoming_msg = incoming_msg.lower()
+   
+    if '1' in incoming_msg:
+        output = ("newAre you facing any difficulties due to medicine? \n type 1 for YES type 0 for NO? ")
+    elif '0' in incoming_msg:
+        output = ("newPlease take your medications on time")
         
     msg.body(output)
     return str(resp)
-    
+
     
  
     if '0' in incoming_msg:
@@ -72,6 +74,8 @@ def bot():
 if __name__ == "__main__":
 	app.run(debug=True)
         
+    
+
     
 
     

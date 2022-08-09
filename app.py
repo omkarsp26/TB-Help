@@ -49,10 +49,10 @@ def bot():
     
     elif '0' in incoming_msg:
         output = ("Are you facing any difficulties due to medicine? \n type 1 for YES type 0 for NO?")
-        if '1' in incoming_msg:
-        output=("What difficulties are you facing? \n 1.Fever \n 2.unexplained anorexia \n 3.brown urine (colour of coffee or cola) ") 
+    
     elif '1' in incoming_msg:
-	output = ("Thanks for the response")
+        output=("What difficulties are you facing? \n 1.Fever \n 2.unexplained anorexia \n 3.brown urine (colour of coffee or cola) ") 
+  
  
     msg.body(output)
     return str(resp) 

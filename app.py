@@ -49,10 +49,12 @@ def bot():
     
     elif '0' in incoming_msg:
         output = ("Are you facing any difficulties due to medicine? \n type 1 for YES type 0 for NO?")
-    
-    elif '1' in incoming_msg:
-        output=("What difficulties are you facing? \n 1.Fever \n 2.unexplained anorexia \n 3.brown urine (colour of coffee or cola) ") 
-  
+        if '1' in incoming_msg:
+            output = ("What difficulties are you facing? \n 1.Fever \n 2.unexplained anorexia \n 3.brown urine (colour of coffee or cola)")
+        else:
+            output = ("Have you contacted doctor? \n if yes type 1 and if no type 0")
+            if '1' in incoming_msg:
+                output = ("Have you received a call from your clinic?")
  
     msg.body(output)
     return str(resp) 

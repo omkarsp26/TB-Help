@@ -44,8 +44,8 @@ def bot():
         output=(" This is a WhatsApp Messaging intervention for enhancing treatment adherence in Latent Tuberculosis Patients in Delhi \n\n Hello, Have you taken your medicine today \n type 1 for YES type 0 for NO? ")
        # incoming_msg = incoming_msg.lower()
         
-        if '1' in incoming_msg:
-            output = ("newAre you facing any difficulties due to medicine? \n type 1 for YES type 0 for NO? ")
+        #if '1' in incoming_msg:
+           # output = ("newAre you facing any difficulties due to medicine? \n type 1 for YES type 0 for NO? ")
             #incoming_msg = incoming_msg.lower()
             #if '1' in incoming_msg:
                # output=("What difficulties are you facing? \n 1.Fever \n 2.unexplained anorexia \n 3.brown urine (colour of coffee or cola) ")

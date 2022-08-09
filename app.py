@@ -42,7 +42,7 @@ def bot():
     
     if 'hi' in incoming_msg:     
         output=(" This is a WhatsApp Messaging intervention for enhancing treatment adherence in Latent Tuberculosis Patients in Delhi \n\n Hello, Have you taken your medicine today \n type 1 for YES type 0 for NO? ")
-        incoming_msg = incoming_msg.lower()
+       # incoming_msg = incoming_msg.lower()
         
         
         if '0' in incoming_msg:

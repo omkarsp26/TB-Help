@@ -42,7 +42,7 @@ def bot():
     
     if 'hi' in incoming_msg:
         #out=translator.translate("troubleshooting", dest='hi')
-        output=(" This is a WhatsApp Messaging intervention for enhancing treatment adherence in Latent Tuberculosis Patients in Delhi \n\n Hello, Have you taken your medicine today \n type 1 for YES type 0 for NO? ")
+        output=(" This is a WhatsApp Messaging intervention for enhancing treatment adherence in Latent Tuberculosis Patients in Delhi \n\n Hello, Have you taken your medicine today \n type 1 for YES type 0 for NO? ")   
     else:
         output = ("Bye")
         
@@ -58,12 +58,10 @@ def bot():
                 
                 if '1' in incoming_msg:
                     output = ("Have you received a call from your clinic?")
-                    msg.body(output)
-    
-    return str(resp) 
+                msg.body(output)
+                return str(resp) 
 
 if __name__ == "__main__":
 	app.run(debug=True)
         
     
-

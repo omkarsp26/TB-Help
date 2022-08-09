@@ -43,6 +43,9 @@ def bot():
     if 'hi' in incoming_msg:
         #out=translator.translate("troubleshooting", dest='hi')
         output=(" This is a WhatsApp Messaging intervention for enhancing treatment adherence in Latent Tuberculosis Patients in Delhi \n\n Hello, Have you taken your medicine today \n type 1 for YES type 0 for NO? ")
+    else:
+        output = ("Bye")
+        
         if '1' in incoming_msg:
             output = ("Are you facing any difficulties due to medicine? \n type 1 for YES type 0 for NO? ")
         else:
@@ -52,13 +55,15 @@ def bot():
                 output = ("What difficulties are you facing? \n 1.Fever \n 2.unexplained anorexia \n 3.brown urine (colour of coffee or cola)")
             else:
                 output = ("Have you contacted doctor? \n if yes type 1 and if no type 0")
+                
                 if '1' in incoming_msg:
                     output = ("Have you received a call from your clinic?")
- 
-    msg.body(output)
+                    msg.body(output)
+    
     return str(resp) 
 
 if __name__ == "__main__":
 	app.run(debug=True)
         
     
+
